@@ -26,10 +26,9 @@ public class Conta {
     @Column(name = "tipo_conta", nullable = false)
     private TipoConta tipo;
     private Double saldo;
-    @Column(name = "Titular_conta", nullable = false)
-
+    
     @ManyToOne
-    @JoinColumn(name = "cliente_cod")
+    @JoinColumn(name = "titular_conta")
     @JsonIgnoreProperties("contas")
     private Cliente titularConta;
 
