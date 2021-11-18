@@ -1,0 +1,8 @@
+-- create database itau_projeto;
+SELECT * FROM itau_projeto.tb_cliente;
+use itau_projeto;
+insert into tb_cliente values (null, "057777843635","carlos@itau.com", "carlos Antonio", "(11) 98765-99999");
+insert into tb_cliente values (null, "057777843655", "carla@itau.com", "carla Antonieta", "(11) 98765-99988");
+
+desc tb_cliente;
+-- drop table tb_cliente;
