@@ -25,6 +25,7 @@ public class Conta {
     private int agencia;
     @Column(name = "tipo_conta", nullable = false)
     private TipoConta tipo;
+    @Column(name = "saldo")
     private Double saldo;
     
     @ManyToOne

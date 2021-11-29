@@ -2,7 +2,6 @@ package com.itau.contas.controller;
 
 import java.util.List;
 
-
 import com.itau.contas.model.Cliente;
 import com.itau.contas.repository.ClienteRepo;
 
@@ -27,7 +26,7 @@ public class ClienteController {
 
         return lista;
     }
-    @GetMapping("/codigo/{cod}")
+    @GetMapping("/{cod}")
     public ResponseEntity<Cliente> buscaPorCodigo(@PathVariable int cod ){
         Cliente cliente = repo.findById(cod).orElse(null);
         if(cliente !=null){
